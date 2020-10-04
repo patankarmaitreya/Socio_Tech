@@ -1,6 +1,31 @@
-{% extends "main/layout.html" %}
 {% load static %}
 
-{% block body %}
-    this is will be the home page
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animals</title>
+    <link rel="stylesheet" href="{% static 'main/styles.css' %}">
+</head>
+<body>
+    <header>
+        <ul>
+            <strong>
+                <li><a href="{% url 'main:index' %}">HOME</a></li>
+                <li><a href="{% url 'main:assist' %}">ASSISTANCE</a></li>
+                <li><a href="{% url 'main:adopt' %}">ADOPT</a></li>
+                <li><a href="{% url 'main:medic' %}">DOCTORS</a></li>
+                <li><a href="{% url 'main:help' %}">VOLUNTEER</a></li>
+            </strong>
+        </ul>
+    </header>
+    <img class="image" src="{% static 'main/background_i_a.png' %}" alt="image of Animals">
+    <div class="abt">
+            <strong>WELCOME TO URBAN SPECIES!</strong> 
+    </div>
+    <div class="intro">   
+        <p>
+
+        </p>
+    </div>
+</body>
+</html>
