@@ -20,7 +20,8 @@ body{
     grid-template-areas:
     ' header '
     ' title '
-    ' image ' ;
+    ' image ' 
+    ' section ';
   }  
 header{
     grid-area: header;
@@ -64,4 +65,9 @@ a{
 }
 .intro{
     grid-area: section;
+    position: relative;
+    padding: 30px;
+    font-size: 25px;
+    left: 670px;
+    bottom: 680px;
 }
